@@ -5,7 +5,7 @@ The simple way to work with attributed placeholder in you UITextView.
 1. Use PlaceholderTextView class instead of UITextView;
 2. Customize Icon & attributed placeholder
 
-  @IBOutlet weak var tvMessage: PlaceholderTextView!
+```@IBOutlet weak var tvMessage: PlaceholderTextView!
 
   let icon: NSTextAttachment = NSTextAttachment()
   icon.image = UIImage(named: "paper-plane")
@@ -20,6 +20,7 @@ The simple way to work with attributed placeholder in you UITextView.
   let option = NSAttributedString(string: " " + "Optional", attributes: [ NSFontAttributeName: italicFont!, NSForegroundColorAttributeName: textColor])
   iconString.append(option)
   tvMessage.attributedPlaceHolder = iconString
+```
 
 <p align="center">
   <img src="https://github.com/MaksimVialykh/placeholderTextView/blob/master/screenshots/empty.png" width="350"/>
