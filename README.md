@@ -1,4 +1,4 @@
-# placeholderTextView
+# PlaceholderTextView
 
 The simple way to work with attributed placeholder in you UITextView.
 
