@@ -11,6 +11,7 @@ The simple way to work with attributed placeholder in you UITextView.
   let icon: NSTextAttachment = NSTextAttachment()
   icon.image = UIImage(named: "paper-plane")
   let iconString = NSMutableAttributedString(attributedString: NSAttributedString(attachment: icon))
+  
   tvMessage.icon = icon
 
   let textColor = UIColor.gray
@@ -20,7 +21,10 @@ The simple way to work with attributed placeholder in you UITextView.
   iconString.append(message)
   let option = NSAttributedString(string: " " + "Optional", attributes: [ NSFontAttributeName: italicFont!, NSForegroundColorAttributeName: textColor])
   iconString.append(option)
+  
   tvMessage.attributedPlaceHolder = iconString
+  
+  tvMessage.layoutSubviews()
 ```
 
 <p align="center">
